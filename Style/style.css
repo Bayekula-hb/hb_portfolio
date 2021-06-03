@@ -92,79 +92,52 @@ header .nav-link {
 }
 
 .div--home {
-  align-self: center;
-  height: 80vh;
+  width: 99%;
+  height: 90vh;
   font-family: "Ubuntu Mono", monospace;
 }
-.div--home .description {
+.div--home .description, .div--home .div--presentation {
   padding-top: 3%;
+  margin: auto 0%;
 }
-.div--home .description p {
+.div--home .description p, .div--home .div--presentation p {
   font-size: 2.6rem;
   text-align: center;
   text-justify: auto;
   width: 50%;
   margin: auto;
 }
-.div--home .description .para--me {
+.div--home .description .para--me, .div--home .div--presentation .para--me {
   padding-bottom: 2%;
   font-size: 3.4rem;
 }
-.div--home .description .para--me span {
+.div--home .description .para--me span, .div--home .div--presentation .para--me span {
   color: #ee5253;
 }
-.div--home .container--photo .para--sociaux {
-  height: 10%;
-  margin: auto 3%;
+.div--home .div--img {
+  padding-top: 3%;
 }
-.div--home .container--photo .para--sociaux a {
-  width: 100%;
-  font-size: 6rem;
-  padding: 0%;
-}
-.div--home .container--photo .para--sociaux a:hover {
-  color: red;
-}
-.div--home .container--photo img {
+.div--home .div--img img {
   object-fit: cover;
-  width: 50%;
-  max-height: 100%;
-  align-self: flex-end;
+  width: 60%;
+  height: 100%;
+  align-self: center;
 }
 
 @media screen and (max-device-width: 480px) {
   .div--home {
-    border: #3917b4 2px solid;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    font-size: 1.4rem;
   }
-  .div--home .container--photo .para--sociaux {
-    display: none;
-  }
-  .div--home .container--photo img {
-    object-fit: cover;
-    width: 50%;
-    height: 100%;
-    align-self: flex-end;
-  }
-
-  .description {
-    padding-top: 3%;
-  }
-  .description p {
-    font-size: 2.6rem;
-    text-align: center;
-    text-justify: auto;
-    width: 50%;
-    margin: auto;
-  }
-  .description .para--me {
-    padding-bottom: 2%;
-    font-size: 3rem;
+  .div--home .div--presentation .para--me, .div--home .div--presentation p {
     width: 100%;
+    font-size: 1.4rem;
   }
-  .description .para--me span {
-    color: #ee5253;
+  .div--home .div--img img {
+    width: 100%;
   }
 }
 @media all and (max-device-width: 890px) {

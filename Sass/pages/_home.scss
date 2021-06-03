@@ -1,9 +1,11 @@
 .div--home {
-  align-self: center;
-  height: 80vh;
+  width: 99%;
+  height: 90vh;
   font-family: "Ubuntu Mono", monospace;
-  & .description {
+  & .description,
+  & .div--presentation {
     padding-top: 3%;
+    margin: auto 0%;
     p {
       font-size: 2.6rem;
       text-align: center;
@@ -19,60 +21,53 @@
       }
     }
   }
-  & .container--photo {
-    .para--sociaux {
-      height: 10%;
-      margin: auto 3%;
-      a {
-        width: 100%;
-        font-size: 6rem;
-        padding: 0%;
-        &:hover {
-          color: red;
-        }
-      }
-    }
+  //   & .container--photo {
+  //     .para--sociaux {
+  //       height: 10%;
+  //       margin: auto 3%;
+  //       a {
+  //         width: 100%;
+  //         font-size: 6rem;
+  //         padding: 0%;
+  //         &:hover {
+  //           color: red;
+  //         }
+  //       }
+  //     }
+  //     img {
+  //       object-fit: cover;
+  //       width: 50%;
+  //       max-height: 100%;
+  //       align-self: flex-end;
+  //     }
+  //   }
+  & .div--img {
+    padding-top: 3%;
     img {
       object-fit: cover;
-      width: 50%;
-      max-height: 100%;
-      align-self: flex-end;
+      width: 60%;
+      height: 100%;
+      align-self: center;
     }
   }
 }
 
 @media screen and (max-device-width: 480px) {
   .div--home {
-        border: rgb(57, 23, 180) 2px solid;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    & .container--photo {
-      .para--sociaux {
-        display: none;
+    font-size: 1.4rem;
+    .div--presentation {
+      .para--me, p {
+        width: 100%;
+        font-size: 1.4rem;
       }
+    }
+    & .div--img {
       img {
-        object-fit: cover;
-        width: 50%;
-        height: 100%;
-        align-self: flex-end;
-      }
-    }
-  }
-  .description {
-    padding-top: 3%;
-    p {
-      font-size: 2.6rem;
-      text-align: center;
-      text-justify: auto;
-      width: 50%;
-      margin: auto;
-    }
-    .para--me {
-      padding-bottom: 2%;
-      font-size: 3rem;
-      width: 100%;
-      & span {
-        color: #ee5253;
+        width: 100%;
       }
     }
   }
