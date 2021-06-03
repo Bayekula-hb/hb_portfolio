@@ -1,0 +1,18 @@
+header {
+  font-size: 2.3rem;
+  nav {
+    color: #fff !important;
+    & .head__title {
+      font-size: 2.3rem;
+      color: $color-btn-index !important;
+      align-self: center;
+      width: 27%;
+    }
+    & button {
+      color: #fff !important;
+    }
+  }
+  .nav-link {
+    color: #fff !important;
+  }
+}

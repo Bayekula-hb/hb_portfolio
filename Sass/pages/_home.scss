@@ -1,0 +1,79 @@
+.div--home {
+  align-self: center;
+  height: 80vh;
+  font-family: "Ubuntu Mono", monospace;
+  & .description {
+    padding-top: 3%;
+    p {
+      font-size: 2.6rem;
+      text-align: center;
+      text-justify: auto;
+      width: 50%;
+      margin: auto;
+    }
+    .para--me {
+      padding-bottom: 2%;
+      font-size: 3.4rem;
+      & span {
+        color: #ee5253;
+      }
+    }
+  }
+  & .container--photo {
+    .para--sociaux {
+      height: 10%;
+      margin: auto 3%;
+      a {
+        width: 100%;
+        font-size: 6rem;
+        padding: 0%;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+    img {
+      object-fit: cover;
+      width: 50%;
+      max-height: 100%;
+      align-self: flex-end;
+    }
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .div--home {
+        border: rgb(57, 23, 180) 2px solid;
+    display: flex;
+    justify-content: space-between;
+    & .container--photo {
+      .para--sociaux {
+        display: none;
+      }
+      img {
+        object-fit: cover;
+        width: 50%;
+        height: 100%;
+        align-self: flex-end;
+      }
+    }
+  }
+  .description {
+    padding-top: 3%;
+    p {
+      font-size: 2.6rem;
+      text-align: center;
+      text-justify: auto;
+      width: 50%;
+      margin: auto;
+    }
+    .para--me {
+      padding-bottom: 2%;
+      font-size: 3rem;
+      width: 100%;
+      & span {
+        color: #ee5253;
+      }
+    }
+  }
+}

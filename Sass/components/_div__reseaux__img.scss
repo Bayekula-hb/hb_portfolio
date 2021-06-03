@@ -1,0 +1,14 @@
+.div--img--reseaux{
+    height: auto;
+    width: 30%;
+    margin: 2% auto;
+    & a i{
+        color: #f5f6fa;
+        transform: scale(1);
+        transition: scale 400ms, color 450ms;
+        &:hover{
+            color: #D80073;
+            transform: scale(1.5);
+        }
+    }
+}
