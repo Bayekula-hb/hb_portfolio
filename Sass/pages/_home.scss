@@ -7,7 +7,7 @@
     margin: auto 0%;
     font-size: 3.4rem;
     padding-bottom: 8%;
-    padding-top: 17%;
+    padding-top: 10%;
     p {
       text-align: center;
       text-justify: auto;
@@ -15,19 +15,18 @@
       margin: auto;
     }
     .para--me {
-      padding-bottom: 2%;
+      padding-bottom: 5%;
       & span {
         color: #ee5253;
       }
     }
   }
   & .div--img {
-    margin: auto 0%;
     img {
       object-fit: cover;
       width: 60%;
       max-height: 100%;
-      align-self: center;
+      margin-top: 10%;
     }
   }
 }
@@ -36,29 +35,33 @@
   padding: 4% 0%;
   & .div--about {
     font-size: 3rem;
+    font-weight: 400;
     color: #fff;
-    &--text {
-    }
-    &--details {
-      font-size: 2rem;
-    }
   }
 }
 
+
+
 @media screen and (max-device-width: 480px) {
   .div--home {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    font-size: 1.4rem;
     .div--presentation {
       margin: 0;
       padding: 9% 0%;
       .para--me,
       p {
         width: 100%;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+      }
+      .para--me{
+        text-align: center;
+        padding-bottom: 5%;
+      }
+      .para--passion{
+        text-align: justify;
       }
     }
     & .div--img {
@@ -79,6 +82,13 @@
           width: 0%;
           height: 2px;
           background: #f3506b;
+        }
+      }
+      &--details{
+        text-align: justify;
+        p{
+          padding: 1% 6%;
+          font-size: 1.3rem;
         }
       }
     }
