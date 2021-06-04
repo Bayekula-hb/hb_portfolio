@@ -1,53 +1,46 @@
 .div--home {
   width: 99%;
-  height: 90vh;
+  max-height: 90vh;
   font-family: "Ubuntu Mono", monospace;
   & .description,
   & .div--presentation {
-    padding-top: 3%;
     margin: auto 0%;
+    font-size: 3.4rem;
+    padding-bottom: 8%;
+    padding-top: 17%;
     p {
-      font-size: 2.6rem;
       text-align: center;
       text-justify: auto;
-      width: 50%;
+      width: 90%;
       margin: auto;
     }
     .para--me {
       padding-bottom: 2%;
-      font-size: 3.4rem;
       & span {
         color: #ee5253;
       }
     }
   }
-  //   & .container--photo {
-  //     .para--sociaux {
-  //       height: 10%;
-  //       margin: auto 3%;
-  //       a {
-  //         width: 100%;
-  //         font-size: 6rem;
-  //         padding: 0%;
-  //         &:hover {
-  //           color: red;
-  //         }
-  //       }
-  //     }
-  //     img {
-  //       object-fit: cover;
-  //       width: 50%;
-  //       max-height: 100%;
-  //       align-self: flex-end;
-  //     }
-  //   }
   & .div--img {
-    padding-top: 3%;
+    margin: auto 0%;
     img {
       object-fit: cover;
       width: 60%;
-      height: 100%;
+      max-height: 100%;
       align-self: center;
+    }
+  }
+}
+.section--about {
+  background-color: #576574;
+  padding: 4% 0%;
+  & .div--about {
+    font-size: 3rem;
+    color: #fff;
+    &--text {
+    }
+    &--details {
+      font-size: 2rem;
     }
   }
 }
@@ -60,14 +53,33 @@
     justify-content: space-between;
     font-size: 1.4rem;
     .div--presentation {
-      .para--me, p {
+      margin: 0;
+      padding: 9% 0%;
+      .para--me,
+      p {
         width: 100%;
         font-size: 1.4rem;
       }
     }
     & .div--img {
+      margin: 0;
       img {
         width: 100%;
+      }
+    }
+  }
+  .section--about {
+    & .div--about {
+      font-size: 1.4rem;
+      text-align: center;
+      &--text {
+        &::after {
+          content: "";
+          display: block;
+          width: 0%;
+          height: 2px;
+          background: #f3506b;
+        }
       }
     }
   }

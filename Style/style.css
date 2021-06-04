@@ -67,6 +67,7 @@ header {
   font-size: 2.3rem;
 }
 header nav {
+  background-color: #576574 !important;
   color: #fff !important;
 }
 header nav .head__title {
@@ -93,35 +94,47 @@ header .nav-link {
 
 .div--home {
   width: 99%;
-  height: 90vh;
+  max-height: 90vh;
   font-family: "Ubuntu Mono", monospace;
 }
 .div--home .description, .div--home .div--presentation {
-  padding-top: 3%;
   margin: auto 0%;
+  font-size: 3.4rem;
+  padding-bottom: 8%;
+  padding-top: 17%;
 }
 .div--home .description p, .div--home .div--presentation p {
-  font-size: 2.6rem;
   text-align: center;
   text-justify: auto;
-  width: 50%;
+  width: 90%;
   margin: auto;
 }
 .div--home .description .para--me, .div--home .div--presentation .para--me {
   padding-bottom: 2%;
-  font-size: 3.4rem;
 }
 .div--home .description .para--me span, .div--home .div--presentation .para--me span {
   color: #ee5253;
 }
 .div--home .div--img {
-  padding-top: 3%;
+  margin: auto 0%;
 }
 .div--home .div--img img {
   object-fit: cover;
   width: 60%;
-  height: 100%;
+  max-height: 100%;
   align-self: center;
+}
+
+.section--about {
+  background-color: #576574;
+  padding: 4% 0%;
+}
+.section--about .div--about {
+  font-size: 3rem;
+  color: #fff;
+}
+.section--about .div--about--details {
+  font-size: 2rem;
 }
 
 @media screen and (max-device-width: 480px) {
@@ -132,12 +145,32 @@ header .nav-link {
     justify-content: space-between;
     font-size: 1.4rem;
   }
-  .div--home .div--presentation .para--me, .div--home .div--presentation p {
+  .div--home .div--presentation {
+    margin: 0;
+    padding: 9% 0%;
+  }
+  .div--home .div--presentation .para--me,
+.div--home .div--presentation p {
     width: 100%;
     font-size: 1.4rem;
   }
+  .div--home .div--img {
+    margin: 0;
+  }
   .div--home .div--img img {
     width: 100%;
+  }
+
+  .section--about .div--about {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .section--about .div--about--text::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #f3506b;
   }
 }
 @media all and (max-device-width: 890px) {
