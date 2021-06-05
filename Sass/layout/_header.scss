@@ -17,3 +17,21 @@ header {
     color: #fff !important;
   }
 }
+
+@media screen and (max-device-width: 480px) {
+  header,
+  .head__title {
+    font-size: 2rem;
+  }
+  nav {
+    .navbar-collapse {
+      background-color: transparent;
+      ul {
+        justify-content: center;
+        li{
+          align-self: center;
+        }
+      }
+    }
+  }
+}

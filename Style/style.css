@@ -83,6 +83,22 @@ header .nav-link {
   color: #fff !important;
 }
 
+@media screen and (max-device-width: 480px) {
+  header,
+.head__title {
+    font-size: 2rem;
+  }
+
+  nav .navbar-collapse {
+    background-color: transparent;
+  }
+  nav .navbar-collapse ul {
+    justify-content: center;
+  }
+  nav .navbar-collapse ul li {
+    align-self: center;
+  }
+}
 .container__footer {
   height: 10%;
   padding: 4%;
@@ -92,95 +108,6 @@ header .nav-link {
   padding: 6%;
 }
 
-.div--home {
-  width: 99%;
-  max-height: 90vh;
-  font-family: "Ubuntu Mono", monospace;
-}
-.div--home .description, .div--home .div--presentation {
-  margin: auto 0%;
-  font-size: 3.4rem;
-  padding-bottom: 8%;
-  padding-top: 10%;
-}
-.div--home .description p, .div--home .div--presentation p {
-  text-align: center;
-  text-justify: auto;
-  width: 90%;
-  margin: auto;
-}
-.div--home .description .para--me, .div--home .div--presentation .para--me {
-  padding-bottom: 5%;
-}
-.div--home .description .para--me span, .div--home .div--presentation .para--me span {
-  color: #ee5253;
-}
-.div--home .div--img img {
-  object-fit: cover;
-  width: 60%;
-  max-height: 100%;
-  margin-top: 10%;
-}
-
-.section--about {
-  background-color: #576574;
-  padding: 4% 0%;
-}
-.section--about .div--about {
-  font-size: 3rem;
-  font-weight: 400;
-  color: #fff;
-}
-
-@media screen and (max-device-width: 480px) {
-  .div--home {
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .div--home .div--presentation {
-    margin: 0;
-    padding: 9% 0%;
-  }
-  .div--home .div--presentation .para--me,
-.div--home .div--presentation p {
-    width: 100%;
-    font-size: 1.2rem;
-  }
-  .div--home .div--presentation .para--me {
-    text-align: center;
-    padding-bottom: 5%;
-  }
-  .div--home .div--presentation .para--passion {
-    text-align: justify;
-  }
-  .div--home .div--img {
-    margin: 0;
-  }
-  .div--home .div--img img {
-    width: 100%;
-  }
-
-  .section--about .div--about {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-  .section--about .div--about--text::after {
-    content: "";
-    display: block;
-    width: 0%;
-    height: 2px;
-    background: #f3506b;
-  }
-  .section--about .div--about--details {
-    text-align: justify;
-  }
-  .section--about .div--about--details p {
-    padding: 1% 6%;
-    font-size: 1.3rem;
-  }
-}
 @media all and (max-device-width: 890px) {
   .container__head {
     display: flex;
@@ -429,6 +356,151 @@ header .nav-link {
   }
   .container__main .section--5 .div--apropos .para--hidden--apropos {
     display: none;
+  }
+}
+.div--home {
+  width: 99%;
+  max-height: 90vh;
+  font-family: "Ubuntu Mono", monospace;
+}
+.div--home .description, .div--home .div--presentation {
+  margin: auto 0%;
+  font-size: 3.4rem;
+  padding-bottom: 8%;
+  padding-top: 10%;
+}
+.div--home .description p, .div--home .div--presentation p {
+  text-align: center;
+  text-justify: auto;
+  width: 90%;
+  margin: auto;
+}
+.div--home .description .para--me, .div--home .div--presentation .para--me {
+  padding-bottom: 5%;
+}
+.div--home .description .para--me span, .div--home .div--presentation .para--me span {
+  color: #ee5253;
+}
+.div--home .div--img img {
+  object-fit: cover;
+  width: 60%;
+  max-height: 100%;
+  margin-top: 10%;
+}
+
+.section--about {
+  background-color: #576574;
+  padding: 4% 0%;
+}
+.section--about .div--about {
+  font-weight: 400;
+  color: #fff;
+}
+.section--about .div--about--text h2 {
+  font-size: 5rem;
+}
+.section--about .div--about--details > p {
+  font-size: 2.7rem;
+}
+
+.section--skills {
+  background-color: orchid;
+  padding: 4%;
+  color: #fff;
+}
+.section--skills .div--skills {
+  width: 80%;
+  margin: 0% auto;
+}
+.section--skills .div--skills--text {
+  width: 40%;
+  margin: 1% auto;
+}
+.section--skills .div--skills--text h2 {
+  text-align: center;
+  font-size: 5rem !important;
+}
+.section--skills .div--skills--details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1%;
+  font-size: 3rem;
+}
+.section--skills .div--skills--details figure {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.section--skills .div--skills--details figure:hover {
+  color: #273c75;
+}
+.section--skills .div--skills--details figure img {
+  width: 40%;
+  align-self: center;
+}
+.section--skills .div--skills--details figure figcaption {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2% 0;
+}
+
+@media screen and (max-device-width: 480px) {
+  .div--home {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .div--home .div--presentation {
+    margin: 0;
+    padding: 9% 0%;
+  }
+  .div--home .div--presentation .para--me,
+.div--home .div--presentation p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .div--home .div--presentation .para--me {
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  .div--home .div--presentation .para--passion {
+    text-align: justify;
+  }
+  .div--home .div--img {
+    margin: 0;
+  }
+  .div--home .div--img img {
+    width: 100%;
+  }
+
+  .section--about .div--about {
+    text-align: center;
+  }
+  .section--about .div--about--text h2 {
+    font-size: 1.4rem;
+  }
+  .section--about .div--about--text::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #f3506b;
+  }
+  .section--about .div--about--details {
+    text-align: justify;
+  }
+  .section--about .div--about--details p {
+    padding: 1% 6%;
+    font-size: 1.3rem;
+  }
+
+  .section--skills .div--skills--text h2 {
+    font-size: 2rem !important;
+  }
+  .section--skills .div--skills--details figure figcaption {
+    font-size: 1rem;
   }
 }
 

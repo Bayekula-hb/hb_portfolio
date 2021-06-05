@@ -34,13 +34,61 @@
   background-color: #576574;
   padding: 4% 0%;
   & .div--about {
-    font-size: 3rem;
     font-weight: 400;
     color: #fff;
+    &--text {
+      h2 {
+        font-size: 5rem;
+      }
+    }
+    &--details {
+      & > p {
+        font-size: 2.7rem;
+      }
+    }
   }
 }
-
-
+.section--skills {
+  background-color: orchid;
+  padding: 4%;
+  color: #fff;
+  .div--skills {
+    width: 80%;
+    margin: 0% auto;
+    &--text {
+      width: 40%;
+      margin: 1% auto;
+      h2 {
+        text-align: center;
+        font-size: 5rem !important;
+      }
+    }
+    &--details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 1%;
+      font-size: 3rem;
+      figure {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+          color: $color--blue;
+        }
+        img {
+          width: 40%;
+          align-self: center;
+        }
+        figcaption {
+          text-align: center;
+          text-transform: uppercase;
+          padding: 2% 0;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-device-width: 480px) {
   .div--home {
@@ -56,11 +104,11 @@
         width: 100%;
         font-size: 1.2rem;
       }
-      .para--me{
+      .para--me {
         text-align: center;
         padding-bottom: 5%;
       }
-      .para--passion{
+      .para--passion {
         text-align: justify;
       }
     }
@@ -73,9 +121,11 @@
   }
   .section--about {
     & .div--about {
-      font-size: 1.4rem;
       text-align: center;
       &--text {
+        h2 {
+          font-size: 1.4rem;
+        }
         &::after {
           content: "";
           display: block;
@@ -84,11 +134,27 @@
           background: #f3506b;
         }
       }
-      &--details{
+      &--details {
         text-align: justify;
-        p{
+        p {
           padding: 1% 6%;
           font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .section--skills {
+    .div--skills {
+      &--text {
+        h2 {
+          font-size: 2rem !important;
+        }
+      }
+      &--details {
+        figure {
+          figcaption {
+            font-size: 1rem;
+          }
         }
       }
     }

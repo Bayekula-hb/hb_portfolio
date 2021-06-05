@@ -1,6 +1,5 @@
-$('.context.example .ui.sidebar')
-  .sidebar({
-    context: $('.context.example .bottom.segment')
-  })
-  .sidebar('attach events', '.context.example .menu .item')
-;
+const BtnMenu = document.querySelector(".navbar-toggler-icon");
+const Navbar = document.querySelector(".Header")
+BtnMenu.addEventListener("click", function(){
+  
+})
