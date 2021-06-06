@@ -120,26 +120,66 @@
     }
   }
 }
-.section--projects{
+.section--projects {
   padding: 2%;
   font-size: 5rem;
-  & .div--projects{
-    &--text{
+  & .div--projects {
+    &--text {
       padding: 1%;
-      h2{
+      h2 {
         font-size: 4rem;
       }
     }
-    &--details{
+    &--details {
       display: flex;
       flex-wrap: nowrap;
-      .card{
+      .card {
         border-radius: 15px;
         font-size: 2.4rem;
         margin: 1% 1%;
         padding: 0%;
-        img{
+        img {
           border-radius: 15px;
+        }
+      }
+    }
+  }
+}
+.section--contact {
+  padding: 2%;
+  background-color: #576574;
+  font-size: 3rem;
+  .div--contact {
+    h2 {
+      i {
+        color: #f3506b;
+        font-size: 3rem !important;
+      }
+    }
+    &--form {
+      form {
+        & input,
+        & textarea {
+          margin: 1%;
+          border-radius: 15px;
+          padding: 1%;
+          outline: none;
+          border: 2px solid;
+          &:focus {
+            border: #f3506b 2px solid;
+          }
+        }
+        .btn--contact {
+          border: #f3506b 2px solid;
+          border-radius: 15px;
+          margin: 1% auto;
+          align-self: center;
+          color: #fff;
+          outline: none;
+          &:hover {
+            background-color: #f3506b;
+            border-color: #576574;
+          }
         }
       }
     }
@@ -235,26 +275,35 @@
       }
     }
   }
-  .section--projects{
+  .section--projects {
     padding: 2%;
     font-size: 2rem;
-    & .div--projects{
-      &--text{
+    & .div--projects {
+      &--text {
         padding: 1%;
-        h2{
+        h2 {
           font-size: 2rem;
         }
       }
-      &--details{
+      &--details {
         flex-direction: column;
-        .card{
+        .card {
           font-size: 1.6rem;
           margin: 1% 0%;
           padding: 0%;
-          img{
+          img {
             width: 99%;
           }
         }
+      }
+    }
+  }
+  .section--contact {
+    padding: 2%;
+    font-size: 1.6rem;
+    .div--contact {
+      &--details {
+        display: none;
       }
     }
   }

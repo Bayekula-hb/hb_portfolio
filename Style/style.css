@@ -497,6 +497,38 @@ header .nav-link {
   border-radius: 15px;
 }
 
+.section--contact {
+  padding: 2%;
+  background-color: #576574;
+  font-size: 3rem;
+}
+.section--contact .div--contact h2 i {
+  color: #f3506b;
+  font-size: 3rem !important;
+}
+.section--contact .div--contact--form form input, .section--contact .div--contact--form form textarea {
+  margin: 1%;
+  border-radius: 15px;
+  padding: 1%;
+  outline: none;
+  border: 2px solid;
+}
+.section--contact .div--contact--form form input:focus, .section--contact .div--contact--form form textarea:focus {
+  border: #f3506b 2px solid;
+}
+.section--contact .div--contact--form form .btn--contact {
+  border: #f3506b 2px solid;
+  border-radius: 15px;
+  margin: 1% auto;
+  align-self: center;
+  color: #fff;
+  outline: none;
+}
+.section--contact .div--contact--form form .btn--contact:hover {
+  background-color: #f3506b;
+  border-color: #576574;
+}
+
 @media screen and (max-device-width: 480px) {
   .section--home {
     padding: 1%;
@@ -588,6 +620,14 @@ header .nav-link {
   }
   .section--projects .div--projects--details .card img {
     width: 99%;
+  }
+
+  .section--contact {
+    padding: 2%;
+    font-size: 1.6rem;
+  }
+  .section--contact .div--contact--details {
+    display: none;
   }
 }
 
