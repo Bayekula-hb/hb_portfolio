@@ -1,32 +1,37 @@
-.div--home {
-  width: 99%;
-  max-height: 90vh;
-  font-family: "Ubuntu Mono", monospace;
-  & .description,
-  & .div--presentation {
-    margin: auto 0%;
-    font-size: 3.4rem;
-    padding-bottom: 8%;
-    padding-top: 10%;
-    p {
-      text-align: center;
-      text-justify: auto;
-      width: 90%;
-      margin: auto;
-    }
-    .para--me {
-      padding-bottom: 5%;
-      & span {
-        color: #ee5253;
+.section--home {
+  padding: 2.19%;
+  .div--home {
+    width: 99%;
+    max-height: 90vh;
+    font-family: "Ubuntu Mono", monospace;
+    display: flex;
+    flex-direction: column !important;
+    & .description,
+    & .div--presentation {
+      margin: auto 0%;
+      font-size: 3.4rem;
+      padding-bottom: 8%;
+      padding-top: 10%;
+      p {
+        text-align: center;
+        text-justify: auto;
+        width: 90%;
+        margin: auto;
+      }
+      .para--me {
+        padding-bottom: 5%;
+        & span {
+          color: #ee5253;
+        }
       }
     }
-  }
-  & .div--img {
-    img {
-      object-fit: cover;
-      width: 60%;
-      max-height: 100%;
-      margin-top: 10%;
+    & .div--img {
+      img {
+        object-fit: cover;
+        width: 60%;
+        max-height: 100%;
+        margin-top: 5%;
+      }
     }
   }
 }
@@ -116,31 +121,34 @@
 }
 
 @media screen and (max-device-width: 480px) {
-  .div--home {
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    .div--presentation {
-      margin: 0;
-      padding: 9% 0%;
-      .para--me,
-      p {
-        width: 100%;
-        font-size: 1.2rem;
+  .section--home {
+    padding: 1%;
+    .div--home {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .div--presentation {
+        margin: 0;
+        padding: 9% 0%;
+        .para--me,
+        p {
+          width: 100%;
+          font-size: 1.2rem;
+        }
+        .para--me {
+          text-align: center;
+          padding-bottom: 5%;
+        }
+        .para--passion {
+          text-align: justify;
+        }
       }
-      .para--me {
-        text-align: center;
-        padding-bottom: 5%;
-      }
-      .para--passion {
-        text-align: justify;
-      }
-    }
-    & .div--img {
-      margin: 0;
-      img {
-        width: 100%;
+      & .div--img {
+        margin: 0;
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -195,7 +203,7 @@
       &--details {
         .card {
           font-size: 1.4rem;
-          .card-title{
+          .card-title {
             font-size: 2rem;
           }
         }

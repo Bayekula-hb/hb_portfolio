@@ -358,34 +358,39 @@ header .nav-link {
     display: none;
   }
 }
-.div--home {
+.section--home {
+  padding: 2.19%;
+}
+.section--home .div--home {
   width: 99%;
   max-height: 90vh;
   font-family: "Ubuntu Mono", monospace;
+  display: flex;
+  flex-direction: column !important;
 }
-.div--home .description, .div--home .div--presentation {
+.section--home .div--home .description, .section--home .div--home .div--presentation {
   margin: auto 0%;
   font-size: 3.4rem;
   padding-bottom: 8%;
   padding-top: 10%;
 }
-.div--home .description p, .div--home .div--presentation p {
+.section--home .div--home .description p, .section--home .div--home .div--presentation p {
   text-align: center;
   text-justify: auto;
   width: 90%;
   margin: auto;
 }
-.div--home .description .para--me, .div--home .div--presentation .para--me {
+.section--home .div--home .description .para--me, .section--home .div--home .div--presentation .para--me {
   padding-bottom: 5%;
 }
-.div--home .description .para--me span, .div--home .div--presentation .para--me span {
+.section--home .div--home .description .para--me span, .section--home .div--home .div--presentation .para--me span {
   color: #ee5253;
 }
-.div--home .div--img img {
+.section--home .div--home .div--img img {
   object-fit: cover;
   width: 60%;
   max-height: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .section--about {
@@ -468,32 +473,35 @@ header .nav-link {
 }
 
 @media screen and (max-device-width: 480px) {
-  .div--home {
+  .section--home {
+    padding: 1%;
+  }
+  .section--home .div--home {
     width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
-  .div--home .div--presentation {
+  .section--home .div--home .div--presentation {
     margin: 0;
     padding: 9% 0%;
   }
-  .div--home .div--presentation .para--me,
-.div--home .div--presentation p {
+  .section--home .div--home .div--presentation .para--me,
+.section--home .div--home .div--presentation p {
     width: 100%;
     font-size: 1.2rem;
   }
-  .div--home .div--presentation .para--me {
+  .section--home .div--home .div--presentation .para--me {
     text-align: center;
     padding-bottom: 5%;
   }
-  .div--home .div--presentation .para--passion {
+  .section--home .div--home .div--presentation .para--passion {
     text-align: justify;
   }
-  .div--home .div--img {
+  .section--home .div--home .div--img {
     margin: 0;
   }
-  .div--home .div--img img {
+  .section--home .div--home .div--img img {
     width: 100%;
   }
 

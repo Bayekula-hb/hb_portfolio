@@ -39,7 +39,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <header class="container-fluid  sticky-top Header">
+      <header class="container-fluid sticky-top Header">
         <nav
           class="
             navbar navbar-expand-lg navbar-light
@@ -87,25 +87,27 @@
           </div>
         </nav>
       </header>
-      <div id="Home" class="div--home div row">
-        <div class="col-5 div--presentation">
-          <p class="col-12 col-sm-5 para para--me">
-            Salut, <br />
-            je m'appelle <span>Hobed Bayekula</span>
-          </p>
-          <p class="col-12 col-sm-5 para para--passion">
-            Développeur full-stack, passionné de l'informatique plus précisement
-            du web et réseaux informatique.
-          </p>
+      <section id="Home" class="section--home align-items-center ">
+        <div id="Home" class="div--home div col-10 row align-items-center justify-content-between">
+          <div class="col-7 row div--presentation">
+            <p class="col-12 col-sm-5 para para--me">
+              Salut, <br />
+              je m'appelle <span>Hobed Bayekula</span>
+            </p>
+            <p class="col-12 col-sm-5 para para--passion">
+              Développeur full-stack, passionné de l'informatique plus
+              précisement du web et réseaux informatique.
+            </p>
+          </div>
+          <div class="col-5 align-items-center justify-content-center div--img">
+            <img
+              src="./Public/Image/image-removebg (1).png"
+              class="col-12 align-self-center"
+              alt="hobed"
+            />
+          </div>
         </div>
-        <div class="col-6 align-items-center justify-content-center div--img">
-          <img
-            src="./Public/Image/image-removebg (1).png"
-            class="col-12 align-self-center"
-            alt="hobed"
-          />
-        </div>
-      </div>
+      </section>
       <section id="About" class="section--about section justify-content-center">
         <div class="col-12 row div div--about justify-content-evenly">
           <div class="col-12 col-sm-2 align-self-center div--about--text">
@@ -196,19 +198,28 @@
           </div>
         </div>
       </section>
-
       <section id="Services" class="section--services justify-content-center">
         <div class="col-12 row div--services">
           <div class="col-12 col-sm-12 align-self-center div--services--text">
             <h2>Mes services</h2>
           </div>
-          <div class="col-12 col-sm-8 row div--services--details justify-content-between">
-            <div class="card col-12 col-sm-5 align-items-center" >
+          <div
+            class="
+              col-12 col-sm-8
+              row
+              div--services--details
+              justify-content-between
+            "
+          >
+            <div class="card col-12 col-sm-5 align-items-center">
               <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
               <i class="fas fa-laptop-code"></i>
               <div class="card-body">
                 <h5 class="card-title">Front-End</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
               </div>
             </div>
             <div class="card col-12 col-sm-5 align-items-center">
@@ -216,13 +227,22 @@
               <i class="fas fa-tools"></i>
               <div class="card-body">
                 <h5 class="card-title">Back-End</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
+      <section id="Projects" class="section--projects">
+        <div class="div--projects col-12 row justify-content-center">
+          <div class="col-12 col-sm-12 align-self-center div--projects--text">
+            <h2>Projets</h2>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="./JS/index.js"></script>
   </body>
