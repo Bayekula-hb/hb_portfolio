@@ -65,9 +65,9 @@ a {
 
 header {
   font-size: 2.3rem;
+  background-color: #576574;
 }
 header nav {
-  background-color: #576574 !important;
   color: #fff !important;
 }
 header nav .head__title {
@@ -404,9 +404,7 @@ header .nav-link {
 }
 
 .section--skills {
-  background-color: orchid;
   padding: 4%;
-  color: #fff;
 }
 .section--skills .div--skills {
   width: 80%;
@@ -436,13 +434,37 @@ header .nav-link {
   color: #273c75;
 }
 .section--skills .div--skills--details figure img {
-  width: 40%;
+  width: 30%;
   align-self: center;
 }
 .section--skills .div--skills--details figure figcaption {
   text-align: center;
   text-transform: uppercase;
   padding: 2% 0;
+}
+
+.section--services {
+  background-color: #576574;
+}
+.section--services .div--services--text h2 {
+  font-size: 4rem;
+}
+.section--services .div--services--details {
+  font-size: 3rem;
+  margin: 2% auto;
+}
+.section--services .div--services--details .card {
+  margin: 1% 2%;
+  align-self: center;
+  background-color: #576574;
+  color: #fff;
+  border-radius: 15px;
+  border-color: #f3506b;
+  padding: 1%;
+}
+.section--services .div--services--details .card .card-title {
+  color: #ee5253;
+  font-size: 3rem;
 }
 
 @media screen and (max-device-width: 480px) {
@@ -501,6 +523,16 @@ header .nav-link {
   }
   .section--skills .div--skills--details figure figcaption {
     font-size: 1rem;
+  }
+
+  .section--services .div--services--text h2 {
+    font-size: 3rem;
+  }
+  .section--services .div--services--details .card {
+    font-size: 1.4rem;
+  }
+  .section--services .div--services--details .card .card-title {
+    font-size: 2rem;
   }
 }
 

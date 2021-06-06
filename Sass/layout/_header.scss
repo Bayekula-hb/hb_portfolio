@@ -1,7 +1,7 @@
 header {
   font-size: 2.3rem;
+  background-color: #576574;
   nav {
-    background-color: #576574 !important;
     color: #fff !important;
     & .head__title {
       font-size: 2.3rem;
@@ -28,7 +28,7 @@ header {
       background-color: transparent;
       ul {
         justify-content: center;
-        li{
+        li {
           align-self: center;
         }
       }

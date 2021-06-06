@@ -49,9 +49,7 @@
   }
 }
 .section--skills {
-  background-color: orchid;
   padding: 4%;
-  color: #fff;
   .div--skills {
     width: 80%;
     margin: 0% auto;
@@ -77,13 +75,40 @@
           color: $color--blue;
         }
         img {
-          width: 40%;
+          width: 30%;
           align-self: center;
         }
         figcaption {
           text-align: center;
           text-transform: uppercase;
           padding: 2% 0;
+        }
+      }
+    }
+  }
+}
+.section--services {
+  background-color: #576574;
+  .div--services {
+    &--text {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+    &--details {
+      font-size: 3rem;
+      margin: 2% auto;
+      .card {
+        margin: 1% 2%;
+        align-self: center;
+        background-color: #576574;
+        color: #fff;
+        border-radius: 15px;
+        border-color: #f3506b;
+        padding: 1%;
+        .card-title {
+          color: #ee5253;
+          font-size: 3rem;
         }
       }
     }
@@ -154,6 +179,24 @@
         figure {
           figcaption {
             font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .section--services {
+    .div--services {
+      &--text {
+        h2 {
+          font-size: 3rem;
+        }
+      }
+      &--details {
+        .card {
+          font-size: 1.4rem;
+          .card-title{
+            font-size: 2rem;
           }
         }
       }
