@@ -450,6 +450,7 @@ header .nav-link {
 
 .section--services {
   background-color: #576574;
+  text-align: center;
 }
 .section--services .div--services--text h2 {
   font-size: 4rem;
@@ -470,6 +471,30 @@ header .nav-link {
 .section--services .div--services--details .card .card-title {
   color: #ee5253;
   font-size: 3rem;
+}
+
+.section--projects {
+  padding: 2%;
+  font-size: 5rem;
+}
+.section--projects .div--projects--text {
+  padding: 1%;
+}
+.section--projects .div--projects--text h2 {
+  font-size: 4rem;
+}
+.section--projects .div--projects--details {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.section--projects .div--projects--details .card {
+  border-radius: 15px;
+  font-size: 2.4rem;
+  margin: 1% 1%;
+  padding: 0%;
+}
+.section--projects .div--projects--details .card img {
+  border-radius: 15px;
 }
 
 @media screen and (max-device-width: 480px) {
@@ -509,7 +534,7 @@ header .nav-link {
     text-align: center;
   }
   .section--about .div--about--text h2 {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .section--about .div--about--text::after {
     content: "";
@@ -534,13 +559,35 @@ header .nav-link {
   }
 
   .section--services .div--services--text h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .section--services .div--services--details .card {
     font-size: 1.4rem;
   }
   .section--services .div--services--details .card .card-title {
     font-size: 2rem;
+  }
+
+  .section--projects {
+    padding: 2%;
+    font-size: 2rem;
+  }
+  .section--projects .div--projects--text {
+    padding: 1%;
+  }
+  .section--projects .div--projects--text h2 {
+    font-size: 2rem;
+  }
+  .section--projects .div--projects--details {
+    flex-direction: column;
+  }
+  .section--projects .div--projects--details .card {
+    font-size: 1.6rem;
+    margin: 1% 0%;
+    padding: 0%;
+  }
+  .section--projects .div--projects--details .card img {
+    width: 99%;
   }
 }
 

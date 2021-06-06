@@ -94,6 +94,7 @@
 }
 .section--services {
   background-color: #576574;
+  text-align: center;
   .div--services {
     &--text {
       h2 {
@@ -114,6 +115,31 @@
         .card-title {
           color: #ee5253;
           font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+.section--projects{
+  padding: 2%;
+  font-size: 5rem;
+  & .div--projects{
+    &--text{
+      padding: 1%;
+      h2{
+        font-size: 4rem;
+      }
+    }
+    &--details{
+      display: flex;
+      flex-wrap: nowrap;
+      .card{
+        border-radius: 15px;
+        font-size: 2.4rem;
+        margin: 1% 1%;
+        padding: 0%;
+        img{
+          border-radius: 15px;
         }
       }
     }
@@ -157,7 +183,7 @@
       text-align: center;
       &--text {
         h2 {
-          font-size: 1.4rem;
+          font-size: 2rem;
         }
         &::after {
           content: "";
@@ -192,12 +218,11 @@
       }
     }
   }
-
   .section--services {
     .div--services {
       &--text {
         h2 {
-          font-size: 3rem;
+          font-size: 2rem;
         }
       }
       &--details {
@@ -205,6 +230,29 @@
           font-size: 1.4rem;
           .card-title {
             font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .section--projects{
+    padding: 2%;
+    font-size: 2rem;
+    & .div--projects{
+      &--text{
+        padding: 1%;
+        h2{
+          font-size: 2rem;
+        }
+      }
+      &--details{
+        flex-direction: column;
+        .card{
+          font-size: 1.6rem;
+          margin: 1% 0%;
+          padding: 0%;
+          img{
+            width: 99%;
           }
         }
       }
