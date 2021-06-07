@@ -152,7 +152,6 @@
       padding: 1%;
       i {
         color: #f3506b;
-        color: #000;
         font-size: 5rem !important;
       }
     }
@@ -185,6 +184,13 @@
             border-color: #576574;
           }
         }
+      }
+    }
+    &--details{
+      height: 90%;
+      color: #fff;
+      a{
+        color: #fff;
       }
     }
   }

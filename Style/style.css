@@ -505,7 +505,6 @@ header .nav-link {
 }
 .section--contact .div--contact h2 i {
   color: #f3506b;
-  color: #000;
   font-size: 5rem !important;
 }
 .section--contact .div--contact--form form input, .section--contact .div--contact--form form textarea {
@@ -533,6 +532,13 @@ header .nav-link {
 .section--contact .div--contact--form form .btn--contact:hover {
   background-color: #f3506b;
   border-color: #576574;
+}
+.section--contact .div--contact--details {
+  height: 90%;
+  color: #fff;
+}
+.section--contact .div--contact--details a {
+  color: #fff;
 }
 
 footer {
