@@ -365,8 +365,6 @@ header .nav-link {
   width: 99%;
   max-height: 90vh;
   font-family: "Ubuntu Mono", monospace;
-  display: flex;
-  flex-direction: column !important;
 }
 .section--home .div--home .description, .section--home .div--home .div--presentation {
   margin: auto 0%;
@@ -500,11 +498,15 @@ header .nav-link {
 .section--contact {
   padding: 2%;
   background-color: #576574;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+.section--contact .div--contact h2 {
+  padding: 1%;
 }
 .section--contact .div--contact h2 i {
   color: #f3506b;
-  font-size: 3rem !important;
+  color: #000;
+  font-size: 5rem !important;
 }
 .section--contact .div--contact--form form input, .section--contact .div--contact--form form textarea {
   margin: 1%;
@@ -516,6 +518,9 @@ header .nav-link {
 .section--contact .div--contact--form form input:focus, .section--contact .div--contact--form form textarea:focus {
   border: #f3506b 2px solid;
 }
+.section--contact .div--contact--form form input::placeholder, .section--contact .div--contact--form form textarea::placeholder {
+  font-size: 1.6rem;
+}
 .section--contact .div--contact--form form .btn--contact {
   border: #f3506b 2px solid;
   border-radius: 15px;
@@ -523,10 +528,18 @@ header .nav-link {
   align-self: center;
   color: #fff;
   outline: none;
+  font-size: 2.4rem;
 }
 .section--contact .div--contact--form form .btn--contact:hover {
   background-color: #f3506b;
   border-color: #576574;
+}
+
+footer {
+  color: #ee5253;
+  padding: 0.7%;
+  font-size: 2.4rem;
+  text-align: center;
 }
 
 @media screen and (max-device-width: 480px) {
@@ -536,8 +549,6 @@ header .nav-link {
   .section--home .div--home {
     width: 95%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
   }
   .section--home .div--home .div--presentation {
     margin: 0;
@@ -626,8 +637,19 @@ header .nav-link {
     padding: 2%;
     font-size: 1.6rem;
   }
+  .section--contact .div--contact--form form {
+    margin: 0% 0.7%;
+  }
+  .section--contact .div--contact--form form .btn--contact {
+    width: auto;
+    font-size: 1.6rem;
+  }
   .section--contact .div--contact--details {
     display: none;
+  }
+
+  footer {
+    font-size: 1.6rem;
   }
 }
 
