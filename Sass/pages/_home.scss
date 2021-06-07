@@ -23,11 +23,10 @@
         }
       }
     }
-    & .div--img {
-      img {
+    & .div--img { img {
         object-fit: cover;
         width: 60%;
-        max-height: 100%;
+        max-height: 100% !important;
         margin-top: 5%;
       }
     }
@@ -226,7 +225,8 @@ footer {
       }
       & .div--img {
         margin: 0;
-        img {
+        .img--profile, img {
+          border-radius: 0%;
           width: 100%;
         }
       }

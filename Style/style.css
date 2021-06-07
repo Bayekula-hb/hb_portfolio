@@ -387,7 +387,7 @@ header .nav-link {
 .section--home .div--home .div--img img {
   object-fit: cover;
   width: 60%;
-  max-height: 100%;
+  max-height: 100% !important;
   margin-top: 5%;
 }
 
@@ -575,7 +575,8 @@ footer {
   .section--home .div--home .div--img {
     margin: 0;
   }
-  .section--home .div--home .div--img img {
+  .section--home .div--home .div--img .img--profile, .section--home .div--home .div--img img {
+    border-radius: 0%;
     width: 100%;
   }
 

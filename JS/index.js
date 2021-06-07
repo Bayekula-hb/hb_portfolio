@@ -8,7 +8,7 @@ const link_linkedin = document.querySelector(".link--linkedin"),
     link_github_coordonnee = document.querySelector(".container--coordonnees .link--github");
 
 
-const img__profile = document.querySelector(".img--profile"),
+const img__profile = document.querySelector(".div--img img"),
     my__name = document.querySelector(".myname");
 
 const img_html = document.querySelectorAll(".img--language");
