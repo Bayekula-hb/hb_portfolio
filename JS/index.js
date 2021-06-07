@@ -8,10 +8,10 @@ const link_linkedin = document.querySelector(".link--linkedin"),
     link_github_coordonnee = document.querySelector(".container--coordonnees .link--github");
 
 
-let img__profile = document.querySelector(".img--profile"),
+const img__profile = document.querySelector(".img--profile"),
     my__name = document.querySelector(".myname");
 
-let img_html = document.querySelectorAll(".img--language");
+const img_html = document.querySelectorAll(".img--language");
 
 /**
  * 
@@ -31,6 +31,7 @@ window.addEventListener("load", ()=>{
         for(const Data of data_db) {
             my__name.textContent = Data.name;
             img__profile.setAttribute('src',Data.image);
+            img__profile.setAttribute('alt',Data.name)
         }
     });
     // link = link_server_json("link");
