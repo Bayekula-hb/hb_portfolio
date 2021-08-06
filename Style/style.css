@@ -63,42 +63,6 @@ a {
   transform: scale(1.5);
 }
 
-header {
-  font-size: 2.3rem;
-  background-color: #576574;
-}
-header nav {
-  color: #fff !important;
-}
-header nav .head__title {
-  font-size: 2.3rem;
-  color: #fff !important;
-  align-self: center;
-  width: 27%;
-}
-header nav button {
-  color: #fff !important;
-}
-header .nav-link {
-  color: #fff !important;
-}
-
-@media screen and (max-device-width: 480px) {
-  header,
-.head__title {
-    font-size: 2rem;
-  }
-
-  nav .navbar-collapse {
-    background-color: transparent;
-  }
-  nav .navbar-collapse ul {
-    justify-content: center;
-  }
-  nav .navbar-collapse ul li {
-    align-self: center;
-  }
-}
 .container__footer {
   height: 10%;
   padding: 4%;
@@ -372,6 +336,16 @@ header .nav-link {
   padding-bottom: 8%;
   padding-top: 10%;
 }
+.section--home .div--home .description .underline--magical, .section--home .div--home .div--presentation .underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+.section--home .div--home .description .underline--magical:hover, .section--home .div--home .div--presentation .underline--magical:hover {
+  background-size: 100% 88%;
+}
 .section--home .div--home .description p, .section--home .div--home .div--presentation p {
   text-align: center;
   text-justify: auto;
@@ -393,13 +367,17 @@ header .nav-link {
 
 .section--about {
   background-color: #576574;
-  padding: 4% 0%;
+  padding: 6% 0%;
 }
 .section--about .div--about {
   font-weight: 400;
   color: #fff;
 }
+.section--about .div--about--text {
+  width: 20%;
+}
 .section--about .div--about--text h2 {
+  width: 100%;
   font-size: 5rem;
 }
 .section--about .div--about--details > p {
@@ -432,9 +410,11 @@ header .nav-link {
   width: 25%;
   display: flex;
   flex-direction: column;
+  transform: scale(1);
 }
 .section--skills .div--skills--details figure:hover {
-  color: #273c75;
+  filter: invert(38%) sepia(16%) saturate(3237%) hue-rotate(312deg) brightness(104%) contrast(105%);
+  transform: scale(1.2);
 }
 .section--skills .div--skills--details figure img {
   width: 30%;
@@ -575,7 +555,8 @@ footer {
   .section--home .div--home .div--img {
     margin: 0;
   }
-  .section--home .div--home .div--img .img--profile, .section--home .div--home .div--img img {
+  .section--home .div--home .div--img .img--profile,
+.section--home .div--home .div--img img {
     border-radius: 0%;
     width: 100%;
   }
@@ -657,6 +638,45 @@ footer {
 
   footer {
     font-size: 1.6rem;
+  }
+}
+header {
+  font-size: 2.3rem;
+  background-color: #576574;
+}
+header nav {
+  color: #fff !important;
+}
+header nav .head__title {
+  font-size: 2.3rem;
+  color: #fff !important;
+  align-self: center;
+  width: 27%;
+}
+header nav button {
+  color: #fff !important;
+}
+header nav .navbar-collapse .nav-link:hover {
+  color: #ee5253 !important;
+}
+header .nav-link {
+  color: #fff !important;
+}
+
+@media screen and (max-device-width: 480px) {
+  header,
+.head__title {
+    font-size: 2rem;
+  }
+
+  nav .navbar-collapse {
+    background-color: transparent;
+  }
+  nav .navbar-collapse ul {
+    justify-content: center;
+  }
+  nav .navbar-collapse ul li {
+    align-self: center;
   }
 }
 
