@@ -13,11 +13,11 @@ header {
       color: #fff !important;
     }
     & .navbar-collapse {
-      .active {
-        .nav-link {
-          color: #ee5253 !important;
-        }
-      }
+      // .active {
+      //   .nav-link {
+      //     color: #ee5253 !important;
+      //   }
+      // }
       .nav-link {
         &:hover {
           color: #ee5253 !important;
