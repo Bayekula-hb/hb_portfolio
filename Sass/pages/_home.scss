@@ -50,7 +50,7 @@
     font-weight: 400;
     color: #fff;
     &--text {
-      width: 20%;
+      width: 30%;
       h2 {
         width: 100%;
         font-size: 5rem;
@@ -58,7 +58,7 @@
     }
     &--details {
       & > p {
-        font-size: 2.7rem;
+        font-size: 2.6rem;
       }
     }
   }
@@ -108,6 +108,7 @@
 .section--services {
   background-color: #576574;
   text-align: center;
+  padding: 2%;
   .div--services {
     &--text {
       h2 {
@@ -127,7 +128,11 @@
         padding: 1%;
         .card-title {
           color: #ee5253;
-          font-size: 3rem;
+          font-size: 2.5rem;
+        }
+        .card-text {
+          text-align: justify;
+          // font-size: 2rem !important;
         }
       }
     }

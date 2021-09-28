@@ -374,14 +374,14 @@ a {
   color: #fff;
 }
 .section--about .div--about--text {
-  width: 20%;
+  width: 30%;
 }
 .section--about .div--about--text h2 {
   width: 100%;
   font-size: 5rem;
 }
 .section--about .div--about--details > p {
-  font-size: 2.7rem;
+  font-size: 2.6rem;
 }
 
 .section--skills {
@@ -429,6 +429,7 @@ a {
 .section--services {
   background-color: #576574;
   text-align: center;
+  padding: 2%;
 }
 .section--services .div--services--text h2 {
   font-size: 4rem;
@@ -448,7 +449,10 @@ a {
 }
 .section--services .div--services--details .card .card-title {
   color: #ee5253;
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+.section--services .div--services--details .card .card-text {
+  text-align: justify;
 }
 
 .section--projects {
